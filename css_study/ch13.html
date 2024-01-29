@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 플렉스 박스 (기본적으로 블록레벨로)-->
+    <!-- <flex 용도> 1.우측방향정렬 2.정렬 3.자동으로 줄바꿈-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* 부모박스에 플렉스 하면 우측으로 정렬 */
+            display: flex;
+            /* column 방향(열 방향) 으로 잡으면 세로로 정렬 */
+            /* row(우측방향) 가 기본방향 */
+            flex-direction: row;
+            /* 기본값은 flex-start, 종류로는 center, flex-end, space-around 등*/
+            /* 주축 */
+            justify-content: center;
+            /* 높이를 가운데정렬하기 */
+            /* 교차축 */
+            align-items: center;
+            /* 행의 칸이 다 차면 자동으로 줄 바꿈 */
+            flex-wrap: wrap;
+            border: 1px solid #000;
+            height: 400px;
+        }
+
+        .box1 {
+            border: 1px solid #000;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

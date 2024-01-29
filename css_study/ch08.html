@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* active : 마우스를 클릭했을 때 순간변화 */
+        /* focus가 상위라서 active 무시 */
+        /* active 는 보통 버튼에 사용 */
+        input:active {
+            background-color: #222;
+        }
+        input:focus {
+            background-color: pink;
+        }
+        /* 버튼은 기본적으로 active hover 적용되있음 */
+        button {
+            border: 1px solid red;
+            background-color: white;
+            cursor: pointer;
+        }
+        /* 커서를 갖대댔을 때 변화 */
+        button:hover {
+            background-color: red;
+        }
+        button:active {
+            background-color: pink;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <input type="text">
+    <button>확인</button>
+</body>
+</html>
