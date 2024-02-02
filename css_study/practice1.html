@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div input {
+            height: 25px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .top {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #263343;
+            padding: 8px 12px;
+        }
+        .top_logo {
+            font-size: 30px;
+        }
+        .top_menu {
+            display: flex;
+            list-style: none;
+        }
+        .top_menu li {
+            padding: 8px 12px;
+        }
+        
+        @media screen and (max-width: 740px) { 
+            .top_logo {
+                flex-direction: column;
+                
+            }
+            .top_menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top_logo">
+            <a href="">MUSINSA</a>
+        </div>
+        <ul class="top_menu">
+            <li><a href="">설날 빅세일</a></li>
+            <li><a href="">랭킹</a></li>
+            <li><a href="">업데이트</a></li>
+            <li><a href="">코디</a></li>
+            <li><a href="">세일</a></li>
+            <li><a href="">스페셜</a></li>
+            <li><a href="">매거진</a></li>
+            <li><a href="">TV</a></li>
+            <li><a href="">이벤트</a></li>
+            <li><a href="">브랜드</a></li>
+        </ul>
+        <div class="top_search">
+            <input type="text" placeholder="남자옷">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontwesome.com/2d323a629b.js" crossoringin="anonymous">
+    </script>
+    <style>
+        body {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #263343;
+            padding: 8px 12px;
+        }
+        .top_logo {
+            font-size: 24px;
+            color: white;
+        }
+        .top_logo i {
+            color: white;
+        }
+        .top_menu li:hover {
+            background-color: orange;
+            border-radius: 4px;
+        }
+        .top_menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+        .top_menu li {
+            padding: 8px 12px;
+        }
+        top_icons {
+            list-style: none;
+            color: white;
+            display: flex;
+            padding-left: 0;
+        }
+        
+        @media screen and (max-width: 670px) {
+            .top {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 8px 12px;
+            }
+            .top_menu {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .top_menu li {
+                width: 100%;
+                text-align: center;
+            }
+            .top_icons {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top">
+
+        <div class="top_logo">
+            <i class="fa-solid fa-cloud"></i>
+            <a href="">DreamCoding</a>
+        </div>
+
+        <ul class="top_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Weddings</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+
+        <ul class="top_icons">
+            <li><i></i></li>
+            <li><i></i></li>
+        </ul>
+    </nav>
+</body>
+</html>
