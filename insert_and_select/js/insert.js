@@ -1,4 +1,4 @@
-function handleSubmitClick() {
+async function handleSubmitClick() {
     const dataInputs = document.querySelectorAll(".data-inputs");
 
     const data = {
@@ -25,13 +25,39 @@ function handleSubmitClick() {
         body: jsonData
     };
 
-    fetch("http://localhost:8080/insert_and_select/data/addition",option)
-    .then((response) => {
-        response.json()
-        .then((json) => {
-            console.log(json.data)
-        });
-    });
+    // await 쓸땐 try/ catch 사용
+    try {
+        const response = await fetch("http://localhost:8080/insert_and_select/data",option)
+        
+        if(!response.ok) {
+            throw await response.json();
+        }
 
-    console.log("test");
+        console.log(response);
+    
+        const json = await response.json();
+    
+        console.log(json);
+        
+        console.log("test");
+
+    } catch(error) {
+        console.log(error);
+        alert(error.errorMessage);
+    }
+
+    // < 위 코드랑 동일한 값 >
+
+    // fetch("http://localhost:8080/insert_and_select/data/addition",option)
+    // .then((response) => {
+    //     response.json()
+    //     .then((json) => {
+    //         console.log(json.data);
+    //         console.log("test");
+    //     });
+    // }).catch((error) => {
+    //     console.log("프로미스 예외처리");
+    //     console.log(error);
+    // });
+
  }

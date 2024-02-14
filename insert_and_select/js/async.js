@@ -4,6 +4,7 @@ console.log(2);
 console.log(3);
 
 // --비동기처리(순서에 상관없이 실행)--
+
 // 3초 뒤에 4 실행 후 2초 뒤 5 실행
 // setTimeout(() => {
 //     console.log(4);
@@ -12,6 +13,7 @@ console.log(3);
 // }, 3000);       
 
 // --promise 형태는 자체가 비동기 이다 (생성이됨과 동시에 실행) resolve, reject 를 받는다--
+
 // resolve가 실행되면 then 이 받게되고 , reject(오류일 때 사용)가 실행되면 catch가 받게된다
 // new Promise((resolve, reject) => {
 //     setTimeout(() => {
